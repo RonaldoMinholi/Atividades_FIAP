@@ -1,0 +1,12 @@
+a:link
+{
+  background-color: lightblue;
+}
+a:visited
+{
+  background-color: lightpink;
+}
+a:hover
+{
+  background-color: yellow;
+}

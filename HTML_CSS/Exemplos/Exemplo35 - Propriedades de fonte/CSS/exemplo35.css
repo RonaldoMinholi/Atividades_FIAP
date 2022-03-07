@@ -1,0 +1,24 @@
+div
+{
+	padding: 5px;
+}
+#texto1
+{
+  font-family: Verdana, Arial, Helvetica;
+  font-size: 22px;
+  font-variant: small-caps;
+  font-weight: 900;
+}
+#texto2
+{
+  font-family: Consolas, Courier New;
+  font-size: 150%;
+  font-weight: bold;
+}
+#texto3
+{
+  font-family: Book Antiqua, Bookman Old Style;
+  font-size: xx-large;
+  font-style: italic;
+  font-weight: lighter;
+}

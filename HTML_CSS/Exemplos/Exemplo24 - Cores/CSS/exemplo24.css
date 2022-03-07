@@ -1,0 +1,30 @@
+div.caixa {
+  /* Propriedades para definir dimensões, posicionamento e bordas das caixas. Serão explicados adiante. */
+  width: 90px;
+  height: 50px;
+  position: relative;
+  float: left;
+  border: 1px solid black;
+  /* Definindo a cor da fonte como branco! */
+  color: #fff;
+}
+
+div#vermelho {
+  background-color: rgb(255, 0, 0);
+}
+div#amarelo {
+  /* Vermelho e verde em 255 (FF ou simplesmente F), azul em 0 (00 ou 0). */
+  background-color: #ff0;
+  /* Fonte em preto. */
+  color: #000;
+}
+div#cinza {
+  /* Cinza, as três cores de luz em 129 (C0). */
+  background-color: #c0c0c0;
+}
+div#verde {
+  background-color: hsl(120, 100%, 50%);
+}
+div#darkOrchid {
+  background-color: DarkOrchid;
+}

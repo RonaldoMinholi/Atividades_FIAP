@@ -1,0 +1,10 @@
+[lang|=en]
+{
+  /* formata a fonte do texto em itálico */
+  font-style: italic;
+}
+img[title~=Fondue]
+{
+  /* formata uma borda sólida de 3 pixels de espessura, na cor amarela */
+  border: 3px solid yellow;
+}

@@ -1,0 +1,16 @@
+div
+{
+	padding: 5px;
+}
+#texto1
+{
+  font: bold italic 18px/22px Verdana, Arial, Helvética;
+}
+#texto2
+{
+  font: 22px Consolas, Courier New;
+}
+#texto3
+{
+  font: xx-large/150%, Georgia, serif;
+}
