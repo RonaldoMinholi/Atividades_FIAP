@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap & CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/usercard.css">
+    <link rel="stylesheet" href="css/card-status.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>Usuário</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+                    <div
+                    class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="#" class="text-decoration-none mt-4 mb-5">
+                        <h3><img class="img-fluid float-start" src="./ICONS/logo-idwall.png" alt="logo Id Wall">
+                        </h3>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-5 align-items-center align-items-sm-start"
+                        id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fs-5 bi bi-check-circle-fill"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-dark">Protocolos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fs-5 bi bi-file-earmark-fill"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-dark">Documentos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi bi-person-fill"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-dark">Usuários</span></a>
+                        </li>
+                        <li>
+                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                <i class="fs-4 bi bi-book-fill"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-dark">Fontes</span></a>
+                        </li>
+                        <li>
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi bi-server"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-dark">Matrizes</span> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi bi-list-check"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-dark">Regras</span> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi bi-paperclip"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-dark">Atributos</span> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi bi-tv"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-dark">Monitor</span> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi bi-globe"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-dark">Organizações</span> </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div>
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle">
+                                    <i class="fs-5 bi bi-gear"></i> <span
+                                        class="ms-1 d-none d-sm-inline text-dark">Settings</span> </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle">
+                                    <i class="fs-5 bi bi-question-circle"></i> <span
+                                        class="ms-1 d-none d-sm-inline text-dark">Helps</span> </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle">
+                                    <i class="fs-5 bi bi-box-arrow-right"></i> <span
+                                        class="ms-1 d-none d-sm-inline text-dark">Organizações</span> </a>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="usuariocanto d-flex justify-content-between">
+                        <nav class="navbar navbar-light bg-light">
+                            <div class="container-fluid">
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar usuários..."
+                                        aria-label="Search">
+                                </form>
+                            </div>
+                        </nav>
+                        <div class="nameuser">
+                            <div class="d-flex align-items-center" >
+                                <div class="backimg">
+                                    <img style="height:60px;" src="icons/icons8-user-64.png" alt="user">
+                                </div>
+                                <span style="    
+                                cursor:pointer;
+                                font-weight: 550;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;}">Nome do Usuário</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-baseline">
+                        <div class="col-md-5 teste45">
+                            <h1>Usuários</h1>
+                            <button type="button" class="btn btn-primary botao">Inativos</button>
+                        </div>
+                        <div class="col ms-5">15 dias</div>
+                        <div class="col teste200">30 dias</div>
+                        <div class="col">45 dias</div>
+                        <div class="col">60 dias</div>
+                    </div>
+
+                    <!-- Início seção Usuário -->
+                    <div class="container mt-4">
+                        <div class="row">
+                            <div class="main__users col-7 p-0">
+
+                                <div class="usercard">
+                    
+                                  <div class="usercard__main">
+                                    <div class="usercard__header flex">
+                                      <img class="usercard__photo" width="50" height="50" src="https://randomuser.me/api/portraits/med/men/50.jpg" alt="foto do usuario">
+                                      <div class="flex flex-col">
+                                        <span>Cliente 12334</span>
+                                        <span>#1026</span>
+                                      </div>
+                                    </div>
+                                    <div class="divprol">
+                                      <span>Protocolos</span>
+                                      <span class="spanproO">0</span>
+                                    </div>
+                                  </div>
+                    
+                    
+                                  <div class="usercard__footer">
+                    
+                                    <div class="footer__data">
+                                      <span>email@email.com</span>
+                                      <ul>
+                                        <li>Acesso: Sim</li>
+                                        <li>Backoffice: Não</li>
+                                        <li>IDn: Não</li>
+                                      </ul>
+                                    </div>
+                    
+                                    <div class="footer__button">
+                                      <button>Logar</button>
+                                    </div>
+                    
+                                  </div>
+                    
+                                </div>
+                    
+                                <div class="usercard">
+                    
+                                  <div class="usercard__main">
+                                    <div class="usercard__header flex">
+                                      <img class="usercard__photo" width="50" height="50" src="https://randomuser.me/api/portraits/med/men/50.jpg" alt="foto do usuario">
+                                      <div class="flex flex-col">
+                                        <span>Cliente 12334</span>
+                                        <span>#1026</span>
+                                      </div>
+                                    </div>
+                                    <div class="divprol">
+                                      <span>Protocolos</span>
+                                      <span class="spanproO">0</span>
+                                    </div>
+                                  </div>
+                    
+                    
+                                  <div class="usercard__footer">
+                    
+                                    <div class="footer__data">
+                                      <span>email@email.com</span>
+                                      <ul>
+                                        <li>Acesso: Sim</li>
+                                        <li>Backoffice: Não</li>
+                                        <li>IDn: Não</li>
+                                      </ul>
+                                    </div>
+                    
+                                    <div class="footer__button">
+                                      <button>Logar</button>
+                                    </div>
+                    
+                                  </div>
+                    
+                                </div>
+                    
+                                <div class="usercard">
+                    
+                                  <div class="usercard__main">
+                                    <div class="usercard__header flex">
+                                      <img class="usercard__photo" width="50" height="50" src="https://randomuser.me/api/portraits/med/men/50.jpg" alt="foto do usuario">
+                                      <div class="flex flex-col">
+                                        <span>Cliente 12334</span>
+                                        <span>#1026</span>
+                                      </div>
+                                    </div>
+                                    <div class="divprol">
+                                      <span>Protocolos</span>
+                                      <span class="spanproO">0</span>
+                                    </div>
+                                  </div>
+                    
+                    
+                                  <div class="usercard__footer">
+                    
+                                    <div class="footer__data">
+                                      <span>email@email.com</span>
+                                      <ul>
+                                        <li>Acesso: Sim</li>
+                                        <li>Backoffice: Não</li>
+                                        <li>IDn: Não</li>
+                                      </ul>
+                                    </div>
+                    
+                                    <div class="footer__button">
+                                      <button>Logar</button>
+                                    </div>
+                    
+                                  </div>
+                    
+                                </div>
+                    
+                                <div class="usercard">
+                    
+                                  <div class="usercard__main">
+                                    <div class="usercard__header flex">
+                                      <img class="usercard__photo" width="50" height="50" src="https://randomuser.me/api/portraits/med/men/50.jpg" alt="foto do usuario">
+                                      <div class="flex flex-col">
+                                        <span>Cliente 12334</span>
+                                        <span>#1026</span>
+                                      </div>
+                                    </div>
+                                    <div class="divprol">
+                                      <span>Protocolos</span>
+                                      <span class="spanproO">0</span>
+                                    </div>
+                                  </div>
+                    
+                    
+                                  <div class="usercard__footer">
+                    
+                                    <div class="footer__data">
+                                      <span>email@email.com</span>
+                                      <ul>
+                                        <li>Acesso: Sim</li>
+                                        <li>Backoffice: Não</li>
+                                        <li>IDn: Não</li>
+                                      </ul>
+                                    </div>
+                    
+                                    <div class="footer__button">
+                                      <button>Logar</button>
+                                    </div>
+                    
+                                  </div>
+                    
+                                </div>
+                              </div>
+                    
+
+                            <!-- Fim seção Usuário -->
+
+                            <div class="col-5">
+                                <div class="container overflow-hidden p-0">
+                                    <div class="cardstats">
+
+                                        <div class="cardstatus">
+                                          <img src="./icons/bxs-check-circle.svg" alt="Icone dos protocolos">
+                                          <div class="divprol">
+                                            <span>Protocolos</span>
+                                            <h2>567</h2>
+                                          </div>
+                                        </div>
+                              
+                                        <div class="cardstatus">
+                                          <img src="./icons/bx-list-check.svg" alt="Icone das consultas em análise">
+                                          <div>
+                                            <span>Consultas em análise</span>
+                                            <h2>456</h2>
+                                          </div>
+                                        </div>
+                              
+                                        <div class="cardstatus">
+                                          <img src="./icons/bxs-hourglass.svg" alt="Icone dos documentos em processamento">
+                                          <div>
+                                            <span>Processando</span>
+                                            <h2>345</h2>
+                                          </div>
+                                        </div>
+                              
+                                        <div class="cardstatus">
+                                            <img src="./icons/bxs-hourglass-top.svg" alt="Icone dos documentos em pre processamento">
+                                            <div>
+                                              <span>Pre-processando</span>
+                                              <h2>246</h2>
+                                            </div>
+                                          </div>
+                              
+                                      </div>
+
+
+                                    <!-- Início seção Status -->
+
+                                    <section class="container fontes1 mt-5 p-0">
+                                        <p>
+                                        <h1>Status</h1>
+                                        </p>
+                                        <div class="container-fluid">
+                                            <form class="d-flex">
+                                                <input class="form-control me-2" type="search"
+                                                    placeholder="Buscar fontes..." aria-label="Search">
+                                            </form>
+                                        </div>
+                                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mt-4"
+                                            id="menu">
+                                            <li class="nav-item">
+                                                <section>
+                                                    <figure class="d-flex justify-content-between">
+                                                        <div>
+                                                            <img src="./icons/bandeiras/Bandeira_de_Santa_Catarina.png"
+                                                                alt="Icone da fonte"> AntecedentesSC
+                                                        </div>
+                                                        <div class="statusfonte"></div>
+                                                    </figure>
+                                                </section>
+                                            </li>
+                                            <li class="nav-item">
+                                                <section>
+                                                    <figure class="d-flex justify-content-between">
+                                                        <div>
+                                                            <img src="./icons/bandeiras/sp.jpeg" alt="Icone da fonte">
+                                                            Veículos DetranSP
+                                                        </div>
+                                                        <div class="statusfonte"></div>
+                                                    </figure>
+                                                </section>
+                                            </li>
+                                            <li class="nav-item">
+                                                <section>
+                                                    <figure class="d-flex justify-content-between">
+                                                        <div>
+                                                            <img src="./icons/bandeiras/brasil redondo.jpeg"
+                                                                alt="Icone da fonte"> Restituições Receita Federal
+                                                        </div>
+                                                        <div class="statusfonte"></div>
+                                                    </figure>
+                                                </section>
+                                            </li>
+                                            <li class="nav-item">
+                                                <section>
+                                                    <figure class="d-flex justify-content-between">
+                                                        <div>
+                                                            <img src="./icons/bandeiras/Bandeira_do_Rio_Grande_do_Sul.png"
+                                                                alt="Icone da fonte"> Infrações DetranRS
+                                                        </div>
+                                                        <div class="statusfonte"></div>
+                                                    </figure>
+                                                </section>
+                                            </li>
+                                            <li class="nav-item">
+                                                <section>
+                                                    <figure class="d-flex justify-content-between">
+                                                        <div>
+                                                            <img src="./icons/bandeiras/Bandeira_do_Ceara.png"
+                                                                alt="Icone da fonte"> AntecedentesCE
+                                                        </div>
+                                                        <div class="statusfonte"></div>
+                                                    </figure>
+                                                </section>
+                                            </li>
+
+                                            <!-- Fim seção Status -->
+
+
+
+
+
+
+
+                                    </section>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+
+
+
+
+
+    <!--JS / Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

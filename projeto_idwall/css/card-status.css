@@ -1,0 +1,35 @@
+.cardstats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.cardstatus {
+    display: flex;
+    align-items: center;
+    width: 204px;
+    height: 150px;
+    border: 1px solid #c1c1c1;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.cardstatus img {
+    border-radius: 12px;
+    margin-right: 16px;
+    align-items: center;
+}
+
+.cardstatus > div span {
+    font-size: 16px;
+}
+
+.card__status > div h2 {
+    font-size: 32px;
+}
+.backimg {
+    border: 1px solid black;
+    border-radius: 23px;
+    margin-right: 10px;
+
+}

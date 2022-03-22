@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+i {
+    color: #5500FF;
+}
+body {
+    background-color: #F9F9F9;
+}
+.form-control {
+    border-radius: 30px;
+}
+
+.botao {
+    background-color: #5500FF;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.teste45 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    margin-bottom: 10px;
+}
+
+.teste200 {
+    background-color: #5500FF;
+    color: #fff;
+
+}
+
+.treta2000 {
+    display: flex;
+    justify-content:space-between;
+}
+
+.teste2001 {
+    display: flex;;
+}
+
+section figure img {
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+}
+
+.statusfonte {
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.card-eric {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 510px;
+    height: 200px;
+}

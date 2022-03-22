@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #50f;
+    --secondary-color: #fff;
+    --success-color: #52c41a;
+    --error-color: #f5222d;
+    --warning-color: #faad14;
+    --main-background: #fafafa;
+
+    --green-50: #f6ffed;
+    --green-100: #d9f7be;
+    --green-200: #b7eb8f;
+    --green-300: #95de64;
+    --green-400: #73d13d;
+    --green-500: #52c41a;
+    --green-600: #389e0d;
+    --green-700: #237804;
+    --green-800: #135200;
+    --green-900: #092b00;
+
+    --purple-50: #f3f2ff;
+    --purple-100: #c8c2ff;
+    --purple-200: #a491ff;
+    --purple-300: #8561ff;
+    --purple-400: 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+input {
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px 10px;
+    border: 1px solid lightgray;
+    outline: none;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-3 {
+    grid-template-columns: 200px auto 450px;
+    gap: 32px;
+}
+.justify-content-between {
+    justify-content: space-between!important;
+    margin: 10px;
+}
